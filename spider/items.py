@@ -6,7 +6,11 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy_app.models import CaiPaoInfo
+from scrapy_djangoitem import DjangoItem
 
+class CaiPiaoInfoItem(DjangoItem):
+    django_model = CaiPiaoInfo
 
 class CaipiaoItems(scrapy.Item):
     # define the fields for your item here like:
